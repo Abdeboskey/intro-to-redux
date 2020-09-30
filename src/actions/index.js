@@ -3,7 +3,7 @@ export const addToDo = todo => ({
   todo
 })
 
-export const toggleComplete = todo => ({
+export const toggleComplete = id => ({
   type: 'TOGGLE_COMPLETE',
-  todo
+  id
 })
