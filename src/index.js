@@ -7,7 +7,11 @@ import rootReducer from './reducers'
 import App from './components/App';
 import './index.css';
 
+const store = createStore(rootReducer, composeWithDevTools())
+
 ReactDOM.render(
-  <App />,
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById('root')
 );
