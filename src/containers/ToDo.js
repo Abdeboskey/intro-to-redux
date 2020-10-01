@@ -7,7 +7,9 @@ const ToDo = ({ id, text, completed, toggleComplete }) => {
     <li 
       className={completed ? 'completed' : 'not-completed'}
       onClick={() => toggleComplete(id)}
-    >{text}</li>
+    >
+      {text}
+    </li>
   )
 }
 
